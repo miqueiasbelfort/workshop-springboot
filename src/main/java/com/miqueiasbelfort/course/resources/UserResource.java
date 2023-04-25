@@ -11,7 +11,7 @@ import com.miqueiasbelfort.course.entities.User;
 @RequestMapping(value = "/users") //The path of Route
 public class UserResource {
 	
-	@GetMapping
+	@GetMapping //Method GET
 	public ResponseEntity<User> findAll(){
 		User u = new User(1L,"Maria","maria@gmail.com","9999999","123456");
 		return ResponseEntity.ok().body(u);
